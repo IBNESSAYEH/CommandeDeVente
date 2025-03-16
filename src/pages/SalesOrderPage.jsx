@@ -15,14 +15,14 @@ const SalesOrderPage = () => {
     <ActionBar></ActionBar>
 
 
-    <InfoSection title="Récapitulatif de la commande" icon={<FaInfoCircle />}>
+    <InfoSection title="Récapitulatif de la commande" >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                      <InfoField label="Montant HT" value="55 000,00 €" icon={<FaEuroSign />} />
-                    <InfoField label="Taxes" value="0,00 €" icon={<FaEuroSign />} />
+                      <InfoField label="Montant HT" value="55 000,00 €" />
+                    <InfoField label="Taxes" value="0,00 €" />
                   </div>
                   <div>
-                      <InfoField label="Montant facturé" value="55 000,00 €" icon={<FaEuroSign />} />
+                      <InfoField label="Montant facturé" value="55 000,00 €" />
                   </div>
                 </div>
               </InfoSection>
