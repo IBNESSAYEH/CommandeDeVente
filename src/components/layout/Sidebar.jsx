@@ -32,7 +32,7 @@ const Sidebar = ({activeItem,  onItemClick }) => {
         <h5 className="text-sm font-semibold text-gray-500">ADMINISTRATION</h5>
       </div>
       <div>
-                {/* menuItems.slice( 5) pour mapper juste sur les  dernier item pour la prtie administarion */}
+         {/* menuItems.slice( 5) pour mapper juste sur les  dernier item pour la prtie administarion */}
         {menuItems.slice(5).map(item => (<SidebarMenuItem  key ={item.id} icon= {item.icon}  label={item.label} isActive ={activeItem === item.id} onClick={() => onItemClick(item.id)} />))}
       </div>
     </div>
