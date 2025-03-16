@@ -1,13 +1,13 @@
 import React from 'react'
-import ActionButton from '../components/buttons/ActionButton'
 import { FaEdit } from "react-icons/fa"
 import PageHeader from '../components/layout/PageHeader'
+import ActionBar from '../components/layout/ActionBar'
 
 const SalesOrderPage = () => {
   return (
     <>
     <PageHeader icon={<FaEdit />} title="Modifier"></PageHeader>
-       <ActionButton  icon={<FaEdit />} label="Modifier"  />
+    <ActionBar></ActionBar>
     </>
   )
 }
