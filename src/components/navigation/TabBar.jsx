@@ -1,14 +1,20 @@
-import React from 'react'
-import Tab from './Tab';
+import Tab from './Tab'
+import { useApp } from '../../context/AppContext'
+const TabBar = () => {
+  const { tabs, activeTab, setActiveTab } = useApp()
 
-const TabBar = ({ tabs, activeTab, onTabChange }) => {
   return (
     <div className="flex border-none">
       {tabs.map(tab => (
-        <Tab  key={tab.id} label={tab.label} isActive={activeTab === tab.id} onClick={() => onTabChange(tab.id)}/>
+        <Tab  key={tab.id} label={
+            <div className="flex items-center">
+              <span className="ml-1">{tab.label}</span>
+            </div>
+          } 
+          isActive={activeTab === tab.id} onClick={() => setActiveTab(tab.id)}/>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export default TabBar

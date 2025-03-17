@@ -4,7 +4,7 @@ const ActionButton = ({ icon, label, onClick, color = 'blue' }) => {
 
     // j'ai utilier cette variable pour faciliter le travaille avec les couleur du tailwind pour le moment on ai besoin just le bleu
     const  colorClasses = {
-        blue: 'bg-blue-800 hover:bg-blue-700 text-white',
+        blue: 'bg-blue-900 hover:bg-blue-700 text-white',
          primary: 'bg-blue-600 hover:bg-blue-700 text-white',
         secondary: 'bg-gray-600 hover:bg-gray-700 text-white',
         success: 'bg-green-600 hover:bg-green-700 text-white',
