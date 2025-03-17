@@ -20,5 +20,4 @@ Install dependencies:
 npm install
 
 Start development server:
-
-bashCopiernpm run dev
+npm run dev
