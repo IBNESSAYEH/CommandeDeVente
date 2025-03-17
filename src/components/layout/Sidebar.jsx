@@ -1,4 +1,3 @@
-// src/components/layout/Sidebar.jsx
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { FaShoppingCart, FaChartLine, FaUsers, FaCog, FaFileAlt, FaChartBar } from 'react-icons/fa'
